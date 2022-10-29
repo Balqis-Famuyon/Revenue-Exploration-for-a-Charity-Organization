@@ -1,0 +1,24 @@
+As the data analyst of this project, I presented insights as to how to increase the donation volume of the charity organization. 
+This was achieved by exploring and running queries on the database; and visualizing the insights so it can be understandable for the fund raising team.
+
+Two tables made up the database for this project: Donation_data and Donor_data. 
+The aforementioned tables were explored, queried and filtered in an SQL (structured query language) environment. When each table got generated, 
+it was exported into tableau software for visualization purposes. 
+
+The key parameters that were used in this analysis can be divided into two categories: 
+•	Personal characteristics of donors: this category includes the unique personal features of donors that is present in the database, 
+  namely: the state of residence of donors, favourite genre of movie of donors, shirt size of donors, second language of donors and favourite colour of donors. 
+  Exploring the personal characteristics of donors puts the fundraising team in a position to connect with the donors genuinely and ultimately get them to,
+  donate more and possibly bring in new donors. 
+•	Donation characteristics of donors: this category includes the features of donation that is received by the organization.
+  They are: the job industry of donors and the donation frequency of donors. Exploring the donation characteristics gives the team clarity,
+  on the highest contributing factor and indicates areas that have potential of adding to the donation volume. 
+  
+The most direct way to increase the donation volume is to get the present donors to donate more, hence the choice of the key parameters listed above. 
+The following questions guided this analysis: 
+•	Which state has the highest number of donation? 
+•	Which professionals from what job field donated the most? 
+•	Which donation frequency (daily, weekly or monthly) contributed the most to the total donation? 
+The general aim of this analysis is to increase the volume of donation, but also specifically to get the highest contributor to donate more,
+and the other contributors to also donate more. This analysis will also explore ways to bring in new beneficial donors via insights from the database. 
+
