@@ -1,0 +1,55 @@
+FINDINGS 1:Total Value of Donation 
+Below is the query that was run in SQL environment that was that was ran on the database to sum up the total value of donation 
+  SELECT SUM (donation) 
+  FROM Donation_Data; 
+
+FINDINGS 2:Total donation Received per State Residence of Donors 
+The following query was run in an SQL environment to extract the relevant data columns. 
+  SELECT state, SUM (donation) 
+  FROM Donation_Data 
+  GROUP BY state; 
+
+FINDINGS 3: Total Donation per Profession of Donors 
+The following query was run in an SQL environment to extract the relevant data columns: 
+  SELECT job_field, SUM (donation) 
+  FROM Donation_Data 
+  GROUP BY job_field; 
+ 
+FINDINGS 4 Total Donation by Donation Frequency 
+The following query was run in an SQL environment to extract the relevant data columns: 
+  SELECT Donation_Data.first_name,Donation_Data.last_name, Donation_Data.donation, Donor_Data.donation_frequency 
+  FROM Donation_Data JOIN Donor_Data 
+  on Donation_Data.id = Donor_Data.id; 
+
+FINDINGS 5: Frequency Distribution of movie genre based on Donors’ choice 
+For the purpose of representation and easy understanding, a relate table was created
+The following query was run in an SQL environment to extract the relevant data columns. 
+  SELECT Donation_Data.first_name, Donation_Data.donation, Donor_Data.movie_genre FROM Donation_Data 
+  JOIN Donor_Data 
+  ON Donation_Data.id=Donor_Data.id; 
+  The table generated was named “Combination_showing_fav_moviegenre” 
+For proper data representation, the following query was run on the table 
+“Combination_showing_fav_moviegenre”: 
+  SELECT movie_genre, donation COUNT  
+  FROM Combination_shows_donationper_moviegenre 
+  ORDER BY COUNT 
+  The table generated was named “movie_count” 
+The following query was run to summarize representation and eliminate outliers 
+  SELECT * FROM Movie_count 
+  ORDER BY total_donors DESC 
+  LIMIT 5; 
+  
+FINDINGS 6:The following query was run in an SQL environment to extract the relevant data columns. 
+  SELECT favourite_colour, Count (*) 
+  FROM Donor_Data 
+  GROUP BY favourite_colour; 
+  
+  
+FINDINGS 7 Frequency Distribution of donors’ shirt size 
+The following query was run in SQL environment to extract the relevant data columns. 
+  SELECT shirt_size, Count (*) 
+  FROM Donation_Data 
+  GROUP BY shirt_size; 
+
+
+
